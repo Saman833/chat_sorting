@@ -99,7 +99,7 @@ def add_id_labels_to_json(json_file_path: str):
         with open(json_file_path, "r", encoding="utf-8") as f:
             json_data = json.load(f)
         for i, msg in enumerate(json_data):
-            labaled_json_data[f"message_{msg['id']}"] = msg
+            labaled_json_data[f"{msg['id']}"] = msg
         with open(labaled_json_file_path, "w", encoding="utf-8") as f:
             json.dump(labaled_json_data, f, indent=4, ensure_ascii=False)
     except : 
