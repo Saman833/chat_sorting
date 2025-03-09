@@ -1,0 +1,6 @@
+.venv
+.vscode
+build
+cpp_libraries
+src/clustering_problem.ipynb
+test_simple_lib.py
